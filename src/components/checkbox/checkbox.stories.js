@@ -1,6 +1,11 @@
 import { createCheckbox } from './checkbox';
 
-export default { title: 'Forms/Checkbox', argTypes:{ onChange:{action:'changed'} } };
+const meta = {
+  title: 'Forms/Checkbox',
+  render: (args) => createCheckbox(args),
+  argTypes:{ onChange:{action:'changed'} }
+};
+export default meta;
 
 export const Base = { args: { label:'Accetto', checked:false } };
 export const Checked = { args: { label:'Selezionato', checked:true } };

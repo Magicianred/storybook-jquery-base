@@ -1,6 +1,10 @@
 import { createAlert } from './alert';
 
-export default { title: 'Components/Alert' };
+const meta = {
+  title: 'Components/Alert',
+  render: (args) => createAlert(args),
+};
+export default meta;
 
 export const Success = { args: { text: 'Operazione completata', tone: 'success' } };
 export const Warning = { args: { text: 'Attenzione richiesta', tone: 'warn' } };

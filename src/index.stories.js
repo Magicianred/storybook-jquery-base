@@ -1,11 +1,9 @@
-// Quick gallery of components
 import { createCard } from './components/card/card';
 import { createButton } from './components/button/button';
 import { createBadge } from './components/badge/badge';
 
-export default { title: 'Overview/Gallery' };
-
-export const Gallery = {
+const meta = {
+  title: 'Overview/Gallery',
   render: () => {
     const root = document.createElement('div');
     root.className = 'ui-row';
@@ -16,3 +14,5 @@ export const Gallery = {
     return root;
   }
 };
+export default meta;
+export const Gallery = {};

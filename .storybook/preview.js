@@ -1,6 +1,8 @@
-// Assicura jQuery disponibile negli stories
+// Ensure jQuery globals
 import $ from 'jquery';
 window.$ = $; window.jQuery = $;
+
+import './preview.css';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

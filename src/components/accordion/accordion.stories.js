@@ -2,7 +2,6 @@ import { createAccordion } from './accordion';
 
 const meta = {
   title: 'Navigation/Accordion',
-  // Renderer esplicito: ritorna un HTMLElement
   render: (args) => createAccordion(args),
 };
 export default meta;

@@ -1,7 +1,11 @@
 import { showToast } from './toast';
 import { createButton } from '../button/button';
 
-export default { title: 'Overlay/Toast' };
+const meta = {
+  title: 'Overlay/Toast',
+  render: () => document.createElement('div'),
+};
+export default meta;
 
 export const Base = {
   render: () => {

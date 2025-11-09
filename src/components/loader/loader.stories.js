@@ -1,5 +1,9 @@
 import { createLoader } from './loader';
 
-export default { title: 'Feedback/Loader' };
+const meta = {
+  title: 'Feedback/Loader',
+  render: () => createLoader()
+};
+export default meta;
 
-export const Spinner = { render: () => createLoader() };
+export const Spinner = {};

@@ -1,6 +1,10 @@
 import { createTabs } from './tabs';
 
-export default { title: 'Navigation/Tabs' };
+const meta = {
+  title: 'Navigation/Tabs',
+  render: (args) => createTabs(args),
+};
+export default meta;
 
 export const Base = { args: { tabs: [
   { id:'uno', label:'Uno', content:'Primo tab' },

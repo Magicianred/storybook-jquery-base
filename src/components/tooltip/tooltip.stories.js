@@ -1,7 +1,11 @@
 import { attachTooltip } from './tooltip';
 import { createButton } from '../button/button';
 
-export default { title: 'Overlay/Tooltip' };
+const meta = {
+  title: 'Overlay/Tooltip',
+  render: () => document.createElement('div'),
+};
+export default meta;
 
 export const Base = {
   render: () => {
