@@ -1,0 +1,25 @@
+{
+  "name": "storybook-jquery-base-extended",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Storybook base per jQuery (HTML + Webpack5) con componenti UI di esempio riutilizzabili.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "sb": "storybook dev -p 6006",
+    "sb:build": "storybook build",
+    "lint": "echo \"(placeholder) add your linter\"",
+    "preview": "npx http-server ./storybook-static -p 6007 -c-"
+  },
+  "devDependencies": {
+    "@storybook/html-webpack5": "^8.4.0",
+    "@storybook/addon-essentials": "^8.4.0",
+    "@storybook/addon-interactions": "^8.4.0",
+    "@storybook/test": "^8.4.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
